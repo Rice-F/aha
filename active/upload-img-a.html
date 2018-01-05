@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>上传图片img-a</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<script type="text/javascript">
+	    (function (doc, win) {
+	      	var docEl = doc.documentElement,
+	        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+	        recalc = function () {
+	          var clientWidth = docEl.clientWidth;
+	          if (!clientWidth) return;
+	          docEl.style.fontSize = 40 * (clientWidth / 750) + 'px';
+	        };
+
+	      	if (!doc.addEventListener) return;
+	      	win.addEventListener(resizeEvt, recalc, false);
+	      	doc.addEventListener('DOMContentLoaded', recalc, false);
+	    })(document, window);
+	</script>
+</head>
+<body>
+	<div class="bg">
+		<a href="">
+			<img src="../images/active/act-beg-hea-logo.png" alt="logo" class="active-logo">
+		</a>
+		<form class="upload-imga">
+			<p class="container">
+				<label class="upload-imga-left">
+					<input class="file" type="file" >
+					<!--  上传图片展示 -->
+					<img src="../images/active/1.png" alt="upload-img-show" class="show-img">
+					<!-- <img src="../images/active/upload-imga-up-btn.png" alt="upload-imga-up-btn" class="btn"> -->
+					<em class="upload-imga-info">
+						<i>邂逅爱聊咖</i>
+					</em>
+				</label>
+				<label class="upload-imga-right">
+					<input class="file" type="file" >
+					<!--  上传图片展示 -->
+					<!-- <img src="../images/active/1.png" alt="upload-img-show" class="show-img"> -->
+					<img src="../images/active/upload-imga-up-btn.png" alt="upload-imga-btn" class="btn">
+					<em class="upload-imga-info">
+						<i>邂逅爱聊咖</i>
+					</em>
+				</label>
+			</p>
+			<div class="upload-imga-title">
+				<p class="left">
+					<span class="upload-imga-small-title">左图标签文案</span>
+					<span>
+						<input class="ipt" type="text" placeholder="邂逅爱聊咖">
+					</span>
+				</p>
+				<p class="right">
+					<span class="upload-imga-small-title">右图标签文案</span>
+					<span>
+						<input class="ipt" type="text" placeholder="邂逅爱聊咖">
+					</span>
+				</p>
+			</div>
+			<p class="upload-imga-tip">
+				*可使用默认文案或自行输入文案，限10个字以内
+			</p>
+			<p class="upload-imga-over">
+				<a href="./upload-img-b.html" class="upload-imga-next">
+					<img src="../images/active/upload-imga-next.png" alt="上传按钮">
+				</a>	
+			</p>
+			
+		</form>
+	</div>
+</body>
+</html>

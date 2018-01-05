@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>上传图片img-a</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<script type="text/javascript">
+	    (function (doc, win) {
+	      	var docEl = doc.documentElement,
+	        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+	        recalc = function () {
+	          var clientWidth = docEl.clientWidth;
+	          if (!clientWidth) return;
+	          docEl.style.fontSize = 40 * (clientWidth / 750) + 'px';
+	        };
+
+	      	if (!doc.addEventListener) return;
+	      	win.addEventListener(resizeEvt, recalc, false);
+	      	doc.addEventListener('DOMContentLoaded', recalc, false);
+	    })(document, window);
+	</script>
+</head>
+<body>
+	<div class="bg">
+		<a href="">
+			<img src="../images/active/act-beg-hea-logo.png" alt="logo" class="active-logo">
+		</a>
+		<p class="clear-upload-success">&nbsp;</p>
+		<h1 class="upload-success-h">
+			上传成功
+		</h1>
+		<div class="upload-imga">
+			<p class="container">
+				<label class="upload-imga-left">
+					<input class="file" type="file" >
+					<!--  上传图片展示 -->
+					<img src="../images/active/1.png" alt="upload-img-show" class="show-img">
+					<em class="upload-imga-info">
+						<i>邂逅爱聊咖</i>
+					</em>
+				</label>
+				<label class="upload-imga-right">
+					<input class="file" type="file" >
+					<!--  上传图片展示 -->
+					<img src="../images/active/1.png" alt="upload-img-show" class="show-img upload-success-reset">
+					<em class="upload-imga-info">
+						<i>邂逅爱聊咖</i>
+					</em>
+				</label>
+			</p>
+			<h2 class="upload-success-h2">
+				<img src="../images/active/upload-success-title.png" alt="赶快号召你的好友来点赞吧~">
+			</h2>
+			<ul class="upload-success-list">
+				<li><a href=""><img src="../images/active/upload-success-list1.png" alt=""></a></li>
+				<li><a href=""><img src="../images/active/upload-success-list2.png" alt=""></a></li>
+				<li><a href="./active-rank.html"><img src="../images/active/upload-success-list3.png" alt=""></a></li>
+				<li><a href=""><img src="../images/active/upload-success-list4.png" alt=""></a></li>
+			</ul>
+		</div>
+		
+	</div>
+</body>
+</html>

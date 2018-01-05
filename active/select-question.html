@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>上传图片img-a</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<script type="text/javascript">
+	    (function (doc, win) {
+	      	var docEl = doc.documentElement,
+	        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+	        recalc = function () {
+	          var clientWidth = docEl.clientWidth;
+	          if (!clientWidth) return;
+	          docEl.style.fontSize = 40 * (clientWidth / 750) + 'px';
+	        };
+
+	      	if (!doc.addEventListener) return;
+	      	win.addEventListener(resizeEvt, recalc, false);
+	      	doc.addEventListener('DOMContentLoaded', recalc, false);
+	    })(document, window);
+	</script>
+</head>
+<body>
+	<div class="bg">
+		<a href="">
+			<img src="../images/active/act-beg-hea-logo.png" alt="logo" class="active-logo">
+		</a>
+		<div class="select-question">
+			<img src="../images/active/select-question-h.png" alt="select-question" class="select-question-h">
+		</div>
+		<form class="select-question-list" action="">
+			<ul>
+				<li class="on">
+					<label for="">
+						<input type="radio" name="select-question">
+						<img src="../images/active/select-question-default.png" alt="default" class="default">
+						<img class="on" src="../images/active/select-question-on.png" alt="on">
+						<span class="list-q">
+							问题1
+						</span>
+						<span class="list-h">
+							问题内容问题内容问题内容问题内容
+						</span>	
+					</label>
+				</li>
+				<li>
+					<label for="">
+						<input type="radio" name="select-question">
+						<img src="../images/active/select-question-default.png" alt="default" class="default">
+						<img class="on" src="../images/active/select-question-on.png" alt="on">
+						<span class="list-q">
+							问题1
+						</span>
+						<span class="list-h">
+							问题内容问题内容问题内容问题内容
+						</span>	
+					</label>
+				</li>
+				<li>
+					<label for="">
+						<input type="radio" name="select-question">
+						<img src="../images/active/select-question-default.png" alt="default" class="default">
+						<img class="on" src="../images/active/select-question-on.png" alt="on">
+						<span class="list-q">
+							问题1
+						</span>
+						<span class="list-h">
+							问题内容问题内容问题内容问题内容
+						</span>	
+					</label>
+				</li>
+				<li>
+					<label for="">
+						<input type="radio" name="select-question">
+						<img src="../images/active/select-question-default.png" alt="default" class="default">
+						<img class="on" src="../images/active/select-question-on.png" alt="on">
+						<span class="list-q">
+							问题1
+						</span>
+						<span class="list-h">
+							问题内容问题内容问题内容问题内容
+						</span>	
+					</label>
+				</li>
+				<li>
+					<label for="">
+						<input type="radio" name="select-question">
+						<img src="../images/active/select-question-default.png" alt="default" class="default">
+						<img class="on" src="../images/active/select-question-on.png" alt="on">
+						<span class="list-q">
+							问题1
+						</span>
+						<span class="list-h">
+							问题内容问题内容问题内容问题内容
+						</span>	
+					</label>
+				</li>
+				<li>
+					<label for="">
+						<input type="radio" name="select-question">
+						<img src="../images/active/select-question-default.png" alt="default" class="default">
+						<img class="on" src="../images/active/select-question-on.png" alt="on">
+						<span class="list-q">
+							问题1
+						</span>
+						<span class="list-h">
+							问题内容问题内容问题内容问题内容
+						</span>	
+					</label>
+				</li>
+				<li>
+					<label for="">
+						<input type="radio" name="select-question">
+						<img src="../images/active/select-question-default.png" alt="default" class="default">
+						<img class="on" src="../images/active/select-question-on.png" alt="on">
+						<span class="list-q">
+							问题1
+						</span>
+						<span class="list-h">
+							问题内容问题内容问题内容问题内容
+						</span>	
+					</label>
+				</li>
+				<li>
+					<label for="">
+						<input type="radio" name="select-question">
+						<img src="../images/active/select-question-default.png" alt="default" class="default">
+						<img class="on" src="../images/active/select-question-on.png" alt="on">
+						<span class="list-q">
+							问题1
+						</span>
+						<span class="list-h">
+							问题内容问题内容问题内容问题内容
+						</span>	
+					</label>
+				</li>
+			</ul>
+			<a href="./question.html" class="select-question-next">
+				<img src="../images/active/select-question-next.png" alt="next">
+			</a>
+		</form>	
+	</div>
+</body>
+<script type="text/javascript" src="../js/zepto.min.js"></script>
+<script type="text/javascript" src="../js/touch.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".select-question-list li").click(function(){
+			$(this).find('input[type="radio"]').get(0).checked = true;
+			$(".select-question-list li").each(function(){
+				$(this).removeClass('on');
+				if($(this).find('input[type="radio"]').get(0).checked){
+					$(this).addClass('on');
+				}
+			});
+		});
+	})
+</script>
+</html>

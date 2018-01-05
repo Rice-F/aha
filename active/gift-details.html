@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>上传图片img-a</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<script type="text/javascript">
+	    (function (doc, win) {
+	      	var docEl = doc.documentElement,
+	        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+	        recalc = function () {
+	          var clientWidth = docEl.clientWidth;
+	          if (!clientWidth) return;
+	          docEl.style.fontSize = 40 * (clientWidth / 750) + 'px';
+	        };
+
+	      	if (!doc.addEventListener) return;
+	      	win.addEventListener(resizeEvt, recalc, false);
+	      	doc.addEventListener('DOMContentLoaded', recalc, false);
+	    })(document, window);
+	</script>
+</head>
+<body>
+	<div class="bg">
+		<a href="">
+			<img src="../images/active/act-beg-hea-logo.png" alt="logo" class="active-logo">
+		</a>
+		<div class="gift-details">
+			<img src="../images/active/1.png" alt="pic" class="gift-details-pic">
+		</div>
+		<p class="gift-user-con">
+				<img src="../images/active/user.png" alt="user-photo" class="user-photo">
+				<span class="name">
+					没错我就是用户ID
+				</span>
+			</p>
+		<p class="gift-next">
+			<a href="" class="l"><img src="../images/active/gift-details-btn1.png" alt="我要参与"></a>
+			<a href="../page/index.html"><img src="../images/active/gift-details-btn2.png" alt="回到首页"></a>
+		</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>上传图片img-a</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<script type="text/javascript">
+	    (function (doc, win) {
+	      	var docEl = doc.documentElement,
+	        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+	        recalc = function () {
+	          var clientWidth = docEl.clientWidth;
+	          if (!clientWidth) return;
+	          docEl.style.fontSize = 40 * (clientWidth / 750) + 'px';
+	        };
+
+	      	if (!doc.addEventListener) return;
+	      	win.addEventListener(resizeEvt, recalc, false);
+	      	doc.addEventListener('DOMContentLoaded', recalc, false);
+	    })(document, window);
+	</script>
+</head>
+<body>
+	<div class="bg">
+		<a href="">
+			<img src="../images/active/act-beg-hea-logo.png" alt="logo" class="active-logo">
+		</a>
+		<h1 class="gift-wall-h">
+			<img src="../images/active/gift-wall-h.png" alt="晒单照片墙">
+		</h1>
+		<div class="active-rank-content gift-wall-content">
+			<div class="over">
+				<ul>
+					<li>
+						<a href="./gift-details.html">
+							<p class="photo">
+							<img src="../images/active/1.png" alt="photo">
+							</p>
+							<p class="info">
+								<img src="../images/active/user.png" alt="user" class="user">
+								<span class="name">我是用户ID</span>
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="./gift-details.html">
+							<p class="photo">
+							<img src="../images/active/1.png" alt="photo">
+							</p>
+							<p class="info">
+								<img src="../images/active/user.png" alt="user" class="user">
+								<span class="name">我是用户ID</span>
+							</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

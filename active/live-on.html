@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>异次元合拍</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<script type="text/javascript">
+	    (function (doc, win) {
+	      	var docEl = doc.documentElement,
+	        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+	        recalc = function () {
+	          var clientWidth = docEl.clientWidth;
+	          if (!clientWidth) return;
+	          docEl.style.fontSize = 40 * (clientWidth / 750) + 'px';
+	        };
+
+	      	if (!doc.addEventListener) return;
+	      	win.addEventListener(resizeEvt, recalc, false);
+	      	doc.addEventListener('DOMContentLoaded', recalc, false);
+	    })(document, window);
+	</script>
+</head>
+<body>
+	<div class="bg">
+		<a href="">
+			<img src="../images/active/act-beg-hea-logo.png" alt="logo" class="active-logo">
+		</a>
+		<div class="live-on-header">
+			<p class="user-details">
+				<span class="user-pic">
+					<img src="../images/active/user.png" alt="user-pic">
+				</span>
+				<span class="user-name">
+					我是用户ID
+				</span>
+				<span class="user-like-number">
+					56518&nbsp;在线
+				</span>
+				<span class="user-like">
+					<img src="../images/active/love.png" alt="love">
+				</span>
+			</p>
+		</div>
+		<!-- live-on -->
+		<div class="live-on-con">
+			<video src="../video/test.ogg" class="live-on-video">
+				你的浏览器版本太低\(^o^)/~
+			</video>
+		</div>
+		<div class="live-on-comment-list">
+			<ul>
+				<li>
+					<span class="user">用户A：</span>
+					留言留言留言留言留言留言Yo
+				</li>
+				<li>
+					<span class="user">用户B：</span>
+					留言留言留言留言留言留言Yo
+				</li>
+				<li>
+					<span class="user">用户C：</span>
+					留言留言留言留言留言留言Yo
+				</li>
+				<li>
+					<span class="user">用户C：</span>
+					留言留言留言留言留言留言Yo
+				</li>
+				<li>
+					<span class="user">用户C：</span>
+					留言留言留言留言留言留言Yo
+				</li>
+			</ul>	
+		</div>
+		<div class="live-over">
+			<form class="live-on-comment-in" action="" method="">
+				<input type="text" placeholder="输入文字">
+				<input type="submit" value="发送">
+			</form>
+		</div>
+	</div>
+</body>
+</html>

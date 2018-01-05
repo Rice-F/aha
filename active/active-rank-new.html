@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>上传图片img-a</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<script type="text/javascript">
+	    (function (doc, win) {
+	      	var docEl = doc.documentElement,
+	        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+	        recalc = function () {
+	          var clientWidth = docEl.clientWidth;
+	          if (!clientWidth) return;
+	          docEl.style.fontSize = 40 * (clientWidth / 750) + 'px';
+	        };
+
+	      	if (!doc.addEventListener) return;
+	      	win.addEventListener(resizeEvt, recalc, false);
+	      	doc.addEventListener('DOMContentLoaded', recalc, false);
+	    })(document, window);
+	</script>
+</head>
+<body>
+	<div class="bg">
+		<a href="">
+			<img src="../images/active/act-beg-hea-logo.png" alt="logo" class="active-logo">
+		</a>
+		<div class="active-rank">
+			<ul class="tab">
+				<li class="on">
+					<a href="">
+						<img class="on" src="../images/active/h1-on.png" alt="标题">
+						<img class="default" src="../images/active/h1-default.png" alt="标题">
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img class="on" src="../images/active/h2-on.png" alt="标题">
+						<img class="default" src="../images/active/h2-default.png" alt="标题">
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img class="on" src="../images/active/h3-on.png" alt="标题">
+						<img class="default" src="../images/active/h3-default.png" alt="标题">
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img class="on" src="../images/active/h4-on.png" alt="标题">
+						<img class="default" src="../images/active/h4-default.png" alt="标题">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="active-rank-content">
+				<p class="active-rank-top">
+					<a href="./active-rank.html">
+						排行榜
+					</a>
+					<a href="./active-rank-new.html" class="on">
+						最新
+					</a>
+				</p>
+				<div class="active-rank-over">
+					<div class="active-rank-list">
+						<ul>
+							<li>
+								<a href="./active-pic-details.html">
+									<p class="pic">
+										<img src="../images/active/1.png" alt="nan">
+										<img src="../images/active/2.png" alt="nv">
+										<span class="tip l">邂逅爱聊咖</span>
+										<span class="tip r">邂逅爱聊咖</span>
+									</p>
+									<p class="user">
+										<span class="user-photo">
+											<img src="../images/active/user.png" alt="photo">
+										</span>
+										<span class="user-title">
+											我是用户ID
+										</span>
+										<span class="user-like">
+											<img src="../images/active/like.png" alt="like">
+											5648
+										</span>
+									</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+		</div>
+	</div>
+</body>
+</html>
